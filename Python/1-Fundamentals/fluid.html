@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Fluid</title>
+    <script src="https://cdn.jsdelivr.net/npm/fluid-canvas@latest"></script>
+</head>
+<body>
+    <canvas id="renderSurface"></canvas>
+    <style>
+    canvas {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+    </style>
+    <script>
+    const canvas = document.getElementById('renderSurface');
+    const myFluid = new Fluid(canvas);
+    myFluid.mapBehaviors({
+        sim_resolution: 128,
+        dye_resolution: 512,
+
+        paused: false,
+        embedded_dither: true,
+
+        dissipation: .97,
+        velocity: .98,
+        pressure: .9,
+        pressure_iteration: 20,
+        curl: .5,
+        emitter_size: .5,
+
+        render_shaders: true,
+        multi_color: true,
+
+        render_bloom: false,
+        bloom_iterations: 8,
+        bloom_resolution: 256,
+        intensity: 3,
+        threshold: 0.6,
+        soft_knee: 0.7,
+
+        background_color: { r: 15, g: 15, b: 15 },
+        transparent: true
+    });
+    myFluid.activate();
+</script>
+</body>
