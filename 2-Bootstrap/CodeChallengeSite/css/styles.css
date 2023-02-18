@@ -1,0 +1,99 @@
+body {
+    font-family: "Open Sans", "sans-serif";
+    background: linear-gradient(to right, green, skyblue 10%, skyblue 90%, green);
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Lobster", cursive;
+}
+
+h2 {
+    color: green;
+    
+}
+
+header h2 {
+    color: greenyellow;
+}
+
+.site-footer {
+    background-image: url(../img/breadcrumb-trail.jpg);
+    padding: 20px 0;
+}
+
+.jumbotron {
+    padding: 30px;
+    margin: 0;
+    background-image: linear-gradient(to right, green, skyblue 30%);
+    color: green
+}
+
+.row-content {
+    padding: 50px 0;
+    border-bottom: 1px ridge;
+    min-height: 200px;
+}
+
+.navbar {
+    background-image: url("../img/breadcrumb-trail.jpg") ;
+}
+
+.tab-content {
+    border: 1px solid rgb(214, 214, 214);
+    border-top: none;
+    padding: 10px;
+}
+
+.btn-primary {
+    background-color: limegreen;
+}
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.carousel {
+    border: solid purple;
+}
+
+.nav-item, #login, footer .container {
+    background-color: green;
+    padding: 3px 10px;
+    border-radius: 50px;
+    border: yellowgreen 2px solid;
+    color: skyblue;
+}
+
+.navlink, #login, footer a, .btn-link {
+    color: greenyellow;
+}
+
+.breadcrumb {
+    background-color: palegreen;
+}
+
+.card-quote, #accordion .card {
+    background-color: palegreen;
+}
+
+h4 a {
+    color: green;
+}
+
+.table-responsive {
+    color: green;
+}
+
+form {
+    color: green;
+}
+
+.form-control {
+    background-color: palegreen;
+}
+
+.form-control:focus {
+    background-color: limegreen;
+}
